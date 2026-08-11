@@ -109,6 +109,10 @@
   .link-card h3{margin:0 0 7px;font-size:24px;color:#222}
   .link-card__text{min-width:0}
   .link-card__text .makecode-url{display:block;color:#164d9c;font-weight:800;overflow-wrap:anywhere;user-select:all;cursor:text}
+  .import-fallback{margin-top:14px;padding:14px 16px;border:2px dashed #c58c18;border-radius:12px;background:#fff8dc;line-height:1.7;font-weight:700}
+  .import-fallback strong{color:#8a4b00}
+  .btn-fallback{display:inline-flex;align-items:center;justify-content:center;margin-top:10px;text-decoration:none;background:#fff;color:#6b28c9;border:2px solid #6b28c9}
+  .btn-fallback:hover{background:#f2eaff}
   .link-card__actions{display:flex;gap:8px;flex:0 0 auto;flex-direction:column}
   .btn{
     appearance:none;border:0;border-radius:6px;padding:11px 16px;font:inherit;font-weight:1000;cursor:pointer;text-decoration:none;text-align:center;white-space:nowrap;
@@ -160,6 +164,10 @@
           <button class="btn btn-copy" type="button" data-copy="https://makecode.com/_3x7htc2Wq7zg">複製連結</button>
         </div>
       </div>
+      <div class="import-fallback">
+        <strong>完整匯入若出現錯誤：</strong>先重新開啟 MakeCode 再匯入一次；若仍無法載入，直接使用下方「單一遊樂園設施程式」，避免一直卡在完整專案。
+        <br><a class="btn btn-fallback" href="#single-title">改用單一設施程式</a>
+      </div>
     </section>
 
     <section class="panel" aria-labelledby="step1-title">
@@ -169,6 +177,7 @@
           <li>開啟 Minecraft 教育版，進入 MakeCode 編輯器。</li>
           <li>點選頁面右上角的「匯入」按鈕。</li>
           <li>在匯入視窗中，點選「匯入 URL…」。</li>
+          <li>貼上上方「完整匯入」連結並繼續；若載入失敗，可回到上方使用備援入口。</li>
         </ol>
         <div class="shots">
           <figure class="shot">

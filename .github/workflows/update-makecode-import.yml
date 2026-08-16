@@ -28,7 +28,7 @@ jobs:
 
           checks = [
               ('遊樂園設施（完整匯入）', 1),
-              ('<p>一次匯入完整遊樂園設施程式。</p>', 1),
+              ('      <p>一次匯入完整遊樂園設施程式。</p>\n', 1),
               ('https://makecode.com/_3x7htc2Wq7zg', 2),
           ]
           for needle, expected in checks:
@@ -37,7 +37,7 @@ jobs:
                   raise SystemExit(f'Expected {expected} occurrence(s) of {needle!r}, found {actual}')
 
           text = text.replace('遊樂園設施（完整匯入）', '海底總動員 (匯入教學)')
-          text = text.replace('<p>一次匯入完整遊樂園設施程式。</p>', '')
+          text = text.replace('      <p>一次匯入完整遊樂園設施程式。</p>\n', '')
           text = text.replace('https://makecode.com/_3x7htc2Wq7zg', 'https://makecode.com/_L6X9uMhkUH9t')
 
           path.write_text(text, encoding='utf-8')

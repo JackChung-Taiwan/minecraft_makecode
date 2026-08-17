@@ -120,6 +120,10 @@
   }
   .btn:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.35)}
   .btn-copy{background:#ffd34d;color:#2b2415;border:2px solid #a47600}
+  .btn-online{background:#2f9e36;color:#fff;border:2px solid #176a23}
+  .btn-online:hover{background:#27862e}
+  .btn-download{background:#6b28c9;color:#fff;border:2px solid #46158f}
+  .btn-download:hover{background:#5720aa}
   .complete-actions .btn{font-size:18px;padding:14px 20px}
   .footer{padding:28px 18px 38px;text-align:center;font-weight:800;color:#e9f9e7;background:#233d1d;border-top:9px solid #152912}
   .toast{
@@ -164,18 +168,14 @@
       </span>
 
       <div class="complete-actions">
-        <button
-          class="btn btn-copy"
-          type="button"
-          data-copy="https://makecode.com/_Ukx7TcL852Pz">
-          複製連結
-        </button>
+        <a class="btn btn-online" href="https://makecode.com/_Ukx7TcL852Pz" target="_blank" rel="noopener">線上匯入</a>
+        <a class="btn btn-download" href="./downloads/haiyang-zongdongyuan.mkcd" download="海洋總動員.mkcd">下載備援程式</a>
       </div>
     </div>
 
     <div class="import-fallback">
-      <strong>若匯入出現錯誤：</strong>
-      請重新開啟 MakeCode 後，再匯入一次。
+      <strong>若線上匯入出現「網路請求失敗」：</strong>
+      請點「下載備援程式」，再於 MakeCode 選擇「匯入 → 匯入檔案」。
     </div>
   </section>
 
@@ -288,7 +288,8 @@
     <span class="makecode-url">https://makecode.com/_Ukx7TcL852Pz</span>
   </div>
   <div class="link-card__actions">
-    <button class="btn btn-copy" type="button" data-copy="https://makecode.com/_Ukx7TcL852Pz" aria-label="複製海洋總動員程式連結">複製連結</button>
+    <a class="btn btn-online" href="https://makecode.com/_Ukx7TcL852Pz" target="_blank" rel="noopener">線上匯入</a>
+    <a class="btn btn-download" href="./downloads/haiyang-zongdongyuan.mkcd" download="海洋總動員.mkcd">下載備援程式</a>
   </div>
 </article>
 
